@@ -174,7 +174,7 @@ public class BoardActivity extends AppCompatActivity implements RealmChangeListe
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.deletAll:
+            case R.id.deleteAll:
                 realm.beginTransaction();
                 realm.deleteAll();
                 realm.commitTransaction();
